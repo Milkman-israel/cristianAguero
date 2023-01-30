@@ -1,0 +1,274 @@
+:root {
+    --blanco: #ffffff;
+    --negro: #090909;
+    --primario: #f2aa1f;
+    --secundario: #114358;
+    --gris: #b6a19e;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Petrona', serif;
+    background-image: linear-gradient(to top, var(--gris) 0%, var(--blanco) 80%);
+}
+
+/* imagen cara */
+
+
+
+
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+.cara {
+    border-radius: 30%;
+    position: relative;
+    margin: 2rem;
+    border-color: #114358;
+    
+ 
+}
+
+
+
+/* tipografias */
+
+h1 {
+    font-size: 7rem;
+
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+
+h3 {
+    font-size: 3rem;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.navegacion-background {
+    background-color: var(--secundario);
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .navegacion {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navegacion a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.navegacion a:hover {
+    background-color: var(--primario);
+    color: var(--negro);
+}
+
+.imagen-fondo {
+    background-image: url(../img/img-design.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+
+
+.contenido-fondo {
+    position: absolute;
+    background-color: rgba(0,0,0,.6);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido-fondo h2, .contenido-fondo p {
+    color: var(--blanco);
+}
+
+.boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        width: auto;
+    }
+}
+
+.contenedor {
+    max-width: 100rem;
+    margin: 0 auto;
+ 
+}
+
+
+
+
+.sombra {
+    box-shadow: -11px 11px 13px 3px rgba(0,0,0,0.66);
+    
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .info-personal {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.informacion h3 {
+    color: var(--secundario);
+}
+
+
+.informacion p {
+    line-height: 2;
+}
+
+.informacion .iconos {
+    width: 15rem;
+    height: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+li {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/** formulario del contacto */
+
+.formulario {
+    background-color: var(--gris);
+    width: min(60rem, 100%);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--secundario);
+}
+
+.contenedor-campos {
+
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+.campo label {
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+/* boton 'enviar' en contacto */
+
+.enviar {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .enviar {
+        display: flex;
+        justify-content: flex-end;
+        width: auto;
+    }
+}
+
+.footer {
+    text-align: center;
+}
+
+
+.puntero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
